@@ -1,16 +1,6 @@
 <?php
 
-require_once '../Config.php';
-  $Current = mysqli_query($link, "SELECT COUNT(admin_id) FROM admin ");
-  //$Current = mysqli_query($link, "SELECT COUNT(admin_id) FROM admin WHERE type = 'Electricity'");
-  $Current_admins = mysqli_fetch_assoc($Current);
-  $Current_users = $Current_admins["COUNT(admin_id)"];
 
-
-  
-  $all = mysqli_query($link, "SELECT COUNT(user_id) FROM users");
-  $all_use = mysqli_fetch_assoc($all);
-  $all_users = $all_use["COUNT(user_id)"];
 
   
 ?>
